@@ -11,19 +11,18 @@
         android:id="@+id/roundTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Round 1"
         android:layout_gravity="center"
         android:textSize="40dp"
+        android:text="@string/round"
         android:textColor="#00B003"
         android:fontFamily="@font/mainfont">
-
     </TextView>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Next round"
+        android:text="@string/nextRound"
         android:id="@+id/nextRoundButton"
         android:fontFamily="@font/mainfont"
         android:textColor="#00B003">
@@ -33,7 +32,5 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         >
-
     </ListView>
-
 </LinearLayout>

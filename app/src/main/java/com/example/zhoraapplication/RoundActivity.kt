@@ -20,7 +20,8 @@ class RoundActivity : AppCompatActivity() {
         setContentView(R.layout.activity_round)
         playerList = findViewById(R.id.playerList)
         roundTextView = findViewById(R.id.roundTextView)
-        var intent = intent
+        roundTextView.text = "${getString(R.string.round)} $roundNumber"
+        val intent = intent
         playerArray = intent.extras?.getParcelableArrayList<Player>("PlayersList")!!
         adapter = MyListView(this, playerArray)
         playerList.adapter = adapter
@@ -39,9 +40,9 @@ class RoundActivity : AppCompatActivity() {
                 startActivity(intent)
                 finish()
             }
-                roundTextView.text = "Round $roundNumber"
-                adapter = MyListView(this, playerArray)
-                playerList.adapter = adapter
-            }
+            roundTextView.text = "${getString(R.string.round)}  $roundNumber"
+            adapter = MyListView(this, playerArray)
+            playerList.adapter = adapter
         }
     }
+}

@@ -11,7 +11,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="RESULTS"
+        android:text="@string/results"
         android:layout_gravity="center"
         android:textSize="40dp"
         android:textColor="#00B003"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
-        android:text="Finish"
+        android:text="@string/finish"
         android:id="@+id/finishButton"
         android:fontFamily="@font/mainfont"
         android:textColor="#32CD32">

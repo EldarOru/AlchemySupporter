@@ -10,7 +10,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="#00B003"
-
         android:fontFamily="@font/mainfont"
         android:textSize="25dp"
         android:layout_alignParentLeft="true"
@@ -22,7 +21,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="number"
-
         android:ems="2"
         android:maxEms="4"
         android:textColor="#00B003"
@@ -30,7 +28,5 @@
         android:textSize="25dp"
         android:backgroundTint="#00B003"
         android:maxLength="3"
-
-
         />
 </RelativeLayout>

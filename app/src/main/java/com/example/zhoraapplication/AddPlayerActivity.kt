@@ -13,7 +13,6 @@ class AddPlayerActivity : AppCompatActivity() {
     lateinit var roundActivityButton: Button
     private val playerArray:ArrayList<Player> = ArrayList()
     private val playerName:ArrayList<String> = ArrayList()
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_player)
@@ -23,7 +22,7 @@ class AddPlayerActivity : AppCompatActivity() {
         roundActivityButton = findViewById(R.id.roundActivity)
         addPlayerButton.setOnClickListener {
             if (playerText.text.toString().isEmpty()){
-                Toast.makeText(this,"Enter your name",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, R.string.enterYourName, Toast.LENGTH_SHORT).show()
             }else{
                 playerArray.add(Player(playerText.text.toString(),0,0))
                 playerName.add(playerText.text.toString())
@@ -32,8 +31,9 @@ class AddPlayerActivity : AppCompatActivity() {
                 playerText.text.clear()
             }
         }
+
         playerList.onItemClickListener = AdapterView.OnItemClickListener{
-            parent,view,position,id ->
+            _, _, position, _ ->
             playerArray.removeAt(position)
             playerName.removeAt(position)
             (adapter as ArrayAdapter<String>).notifyDataSetChanged()
@@ -41,7 +41,7 @@ class AddPlayerActivity : AppCompatActivity() {
 
         roundActivityButton.setOnClickListener {
             if (playerArray.size < 2) {
-                Toast.makeText(this, "Need at least 2 players", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, R.string.need2Players, Toast.LENGTH_LONG).show()
             } else {
                 val intent = Intent(this, RoundActivity::class.java)
                 intent.putExtra("PlayersList", playerArray)

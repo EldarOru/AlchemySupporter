@@ -1,3 +1,15 @@
 <resources>
     <string name="app_name">ZhoraApplication</string>
+    <string name="start">Start</string>
+    <string name="players">Players</string>
+    <string name="writeYourNameHint">Write your name</string>
+    <string name="add">Add</string>
+    <string name="next">Next</string>
+    <string name="enterYourName">Enter your name</string>
+    <string name="need2Players">Need at least 2 players</string>
+    <string name="round">Round</string>
+    <string name="nextRound">Next round</string>
+    <string name="results">RESULTS</string>
+    <string name="finish">Finish</string>
+    <string name="winner">Winner is</string>
 </resources>

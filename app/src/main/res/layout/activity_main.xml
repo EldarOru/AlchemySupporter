@@ -23,7 +23,7 @@
         tools:background="@color/white"
         android:gravity="center"
         android:fontFamily="@font/mainfont"
-        android:text="Start"
+        android:text="@string/start"
         android:textColor="#32CD32"
         android:textStyle="bold" />
 </LinearLayout>
