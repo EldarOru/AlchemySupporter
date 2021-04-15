@@ -15,7 +15,7 @@
         android:text="@string/players"
         android:layout_gravity="center"
         android:textSize="40dp"
-        android:textColor="#00B003"
+        android:textColor="@color/main_green"
         android:fontFamily="@font/mainfont">
     </TextView>
         <EditText
@@ -44,8 +44,7 @@
             android:layout_height="wrap_content"
             android:text="@string/add"
             android:layout_alignParentLeft="true"
-            android:fontFamily="@font/mainfont"
-            android:textColor="#00B003"
+            style="@style/AppTheme.Button"
             android:layout_alignParentStart="true">
         </Button>
         <Button
@@ -55,8 +54,7 @@
             android:gravity="center"
             android:text="@string/next"
             android:id="@+id/roundActivity"
-            android:fontFamily="@font/mainfont"
-            android:textColor="#00B003">
+            style="@style/AppTheme.Button">
         </Button>
         </RelativeLayout>
     <ListView

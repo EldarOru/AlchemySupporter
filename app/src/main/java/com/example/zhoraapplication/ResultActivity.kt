@@ -30,7 +30,7 @@ class ResultActivity : AppCompatActivity() {
         val adapter = SimpleAdapter(this, data, R.layout.row2, arrayOf("Names", "Points"),
                 intArrayOf(android.R.id.text1, android.R.id.text2))
         playerResultList.adapter = adapter
-        Toast.makeText(this, "${R.string.winner} ${playerArray[0].name}",Toast.LENGTH_LONG).show()
+        Toast.makeText(this, "${getString(R.string.winner)} ${playerArray[0].name}",Toast.LENGTH_LONG).show()
         val finishButton:Button = findViewById(R.id.finishButton)
         finishButton.setOnClickListener {
             val intentFinish = Intent(this, MainActivity::class.java)

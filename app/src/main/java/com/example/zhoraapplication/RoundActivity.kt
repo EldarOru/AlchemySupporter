@@ -39,10 +39,11 @@ class RoundActivity : AppCompatActivity() {
                 intent.putExtra("PlayersList", playerArray)
                 startActivity(intent)
                 finish()
+            } else {
+                roundTextView.text = "${getString(R.string.round)}  $roundNumber"
+                adapter = MyListView(this, playerArray)
+                playerList.adapter = adapter
             }
-            roundTextView.text = "${getString(R.string.round)}  $roundNumber"
-            adapter = MyListView(this, playerArray)
-            playerList.adapter = adapter
         }
     }
 }
