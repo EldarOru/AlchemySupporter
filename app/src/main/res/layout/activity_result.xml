@@ -22,15 +22,15 @@
     </TextView>
 
     <Button
+        android:id="@+id/finishButton"
+        style="@style/AppTheme.Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="@drawable/border"
         android:gravity="center"
-        android:text="@string/finish"
-        android:id="@+id/finishButton"
-        style="@style/AppTheme.Button"
-        android:background="@drawable/border">
-    </Button>
+        android:text="@string/finish"></Button>
 
     <ListView
         android:id="@+id/playerResultList"
