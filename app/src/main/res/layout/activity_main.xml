@@ -23,5 +23,6 @@
         android:gravity="center"
         android:text="@string/start"
         android:textStyle="bold"
-        style="@style/AppTheme.Button"/>
+        style="@style/AppTheme.Button"
+        android:background="@drawable/border"/>
 </LinearLayout>

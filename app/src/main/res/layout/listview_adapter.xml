@@ -13,6 +13,7 @@
         android:fontFamily="@font/mainfont"
         android:textSize="25dp"
         android:layout_alignParentLeft="true"
+
         />
 
     <EditText

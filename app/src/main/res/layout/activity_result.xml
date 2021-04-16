@@ -7,15 +7,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black"
-    tools:context=".ResultActivity">
+    tools:context=".ResultActivity"
+    >
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:text="@string/results"
         android:layout_gravity="center"
-        android:textSize="40dp"
+        android:textSize="40sp"
         android:textColor="#00B003"
-        android:fontFamily="@font/mainfont">
+        android:fontFamily="@font/mainfont"
+        android:background="@drawable/border">
     </TextView>
 
     <Button
@@ -25,13 +28,16 @@
         android:gravity="center"
         android:text="@string/finish"
         android:id="@+id/finishButton"
-        style="@style/AppTheme.Button">
+        style="@style/AppTheme.Button"
+        android:background="@drawable/border">
     </Button>
 
     <ListView
         android:id="@+id/playerResultList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:divider="@color/main_green"
+        android:dividerHeight="2px"
         >
     </ListView>
 

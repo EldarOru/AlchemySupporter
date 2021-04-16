@@ -7,29 +7,34 @@
     android:layout_height="match_parent"
     android:background="@color/black"
     tools:context=".RoundActivity">
+
     <TextView
         android:id="@+id/roundTextView"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textSize="40dp"
+        android:gravity="center"
+        android:fontFamily="@font/mainfont"
         android:text="@string/round"
         android:textColor="@color/main_green"
-        android:fontFamily="@font/mainfont">
-    </TextView>
+        android:textSize="40sp"
+        android:background="@drawable/border"></TextView>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:gravity="center"
+
         android:text="@string/nextRound"
         android:id="@+id/nextRoundButton"
-        style="@style/AppTheme.Button">
+        style="@style/AppTheme.Button"
+        android:background="@drawable/border">
     </Button>
     <ListView
         android:id="@+id/playerList"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:divider="@color/main_green"
+        android:dividerHeight="2px"
         >
     </ListView>
 </LinearLayout>
