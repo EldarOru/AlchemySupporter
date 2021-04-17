@@ -1,6 +1,5 @@
 package com.example.zhoraapplication
 
-
 import MyListView
 import android.content.Intent
 import android.os.Bundle
