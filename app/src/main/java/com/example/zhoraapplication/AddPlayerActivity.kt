@@ -27,7 +27,7 @@ class AddPlayerActivity : AppCompatActivity() {
                 playerArray.add(Player(playerText.text.toString(),0,0))
                 playerName.add(playerText.text.toString())
                 adapter = ArrayAdapter(this,R.layout.row,playerName)
-                playerList.adapter = adapter as ArrayAdapter<String>
+                playerList.adapter = adapter as ArrayAdapter<*>
                 playerText.text.clear()
             }
         }
@@ -36,7 +36,7 @@ class AddPlayerActivity : AppCompatActivity() {
             _, _, position, _ ->
             playerArray.removeAt(position)
             playerName.removeAt(position)
-            (adapter as ArrayAdapter<String>).notifyDataSetChanged()
+            (adapter as ArrayAdapter<*>).notifyDataSetChanged()
         }
 
         roundActivityButton.setOnClickListener {
