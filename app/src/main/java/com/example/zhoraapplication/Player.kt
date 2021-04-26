@@ -4,8 +4,8 @@ import android.os.Parcel
 import android.os.Parcelable
 
 class Player(val name: String?, var points:Int, var pointsToPlus:Int) : Parcelable {
-    constructor(parcel: Parcel) : this(parcel.readString(), parcel.readInt(), parcel.readInt()) {
-    }
+    constructor(parcel: Parcel) : this(parcel.readString(), parcel.readInt(), parcel.readInt())
+
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(name)
