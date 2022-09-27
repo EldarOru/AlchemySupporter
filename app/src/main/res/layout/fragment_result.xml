@@ -6,9 +6,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".ResultActivity"
-    >
+    android:background="@color/black">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -21,25 +19,15 @@
         android:background="@drawable/border">
     </TextView>
 
-    <Button
-        android:id="@+id/finishButton"
-        style="@style/AppTheme.Button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:background="@drawable/border"
-        android:gravity="center"
-        android:text="@string/finish"></Button>
-
-    <ListView
+    <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/playerResultList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:divider="@color/main_green"
-        android:dividerHeight="2px"
-        >
-    </ListView>
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </androidx.recyclerview.widget.RecyclerView>
 
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 </LinearLayout>
