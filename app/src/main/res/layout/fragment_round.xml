@@ -5,8 +5,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/black"
-    tools:context=".RoundActivity">
+    android:background="@color/black">
 
     <TextView
         android:id="@+id/roundTextView"
@@ -18,25 +17,17 @@
         android:text="@string/round"
         android:textColor="@color/main_green"
         android:textSize="40sp"
-        android:background="@drawable/border"></TextView>
+        android:background="@drawable/border"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/playerList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </androidx.recyclerview.widget.RecyclerView>
 
     <Button
-        android:id="@+id/nextRoundButton"
-        style="@style/AppTheme.Button"
-        android:layout_width="wrap_content"
-
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_margin="10dp"
-        android:background="@drawable/border"
-        android:padding="5dp"
-        android:text="@string/nextRound"></Button>
-    <ListView
-        android:id="@+id/playerList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:divider="@color/main_green"
-        android:dividerHeight="2px"
-        >
-    </ListView>
+        android:id="@+id/nextRoundButton"/>
 </LinearLayout>

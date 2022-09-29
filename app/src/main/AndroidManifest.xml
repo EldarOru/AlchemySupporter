@@ -3,16 +3,15 @@
     package="com.example.zhoraapplication">
 
     <application
+        android:name=".App"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="AlchemySupporter"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ZhoraApplication">
-        <activity android:name=".ResultActivity" />
-        <activity android:name=".RoundActivity" />
-        <activity android:name=".AddPlayerActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
