@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <style name="AppTheme.Button" parent="Widget.AppCompat.Button.Colored">
-        <item name="android:textColor">@color/main_green</item>
-        <item name="android:fontFamily">@font/mainfont</item>
-        <item name="android:textSize">20sp</item>
-    </style>
-</resources>
