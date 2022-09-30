@@ -1,5 +1,6 @@
 package com.example.zhoraapplication.game.presentation.playercreation
 
+import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.AsyncDifferConfig
 import androidx.recyclerview.widget.DiffUtil
@@ -13,18 +14,18 @@ class PlayerCreationAdapter : ListAdapter<DefaultPlayer, PlayerCreationAdapter.D
 ) {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DefaultPlayerVH {
-        TODO("Not yet implemented")
+        return DefaultPlayerVH(DefaultPlayerItemBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
     override fun onBindViewHolder(holder: DefaultPlayerVH, position: Int) {
-        TODO("Not yet implemented")
+        holder.bind(currentList[position])
     }
 
     class DefaultPlayerVH(
         private val defaultPlayerItemBinding: DefaultPlayerItemBinding
     ) : RecyclerView.ViewHolder(defaultPlayerItemBinding.root) {
-        fun bind() {
-            TODO()
+        fun bind(defaultPlayer: DefaultPlayer) {
+            defaultPlayer.setText(defaultPlayerItemBinding.defaultPlayerName)
         }
     }
 
